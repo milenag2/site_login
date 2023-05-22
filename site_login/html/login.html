@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/login.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/css/grifo.css">
+    <title>Login - Grifo</title>  
+  </head>
+  <body>
+    <h1> GRIFO: Login</h1>
+        <div class = "mainBox">
+            <div id='msgError'></div>
+          <form autocomplete="off" id="form">
+            <div class = "box">
+              <label id="labelEmail" for="email">E-mail: </label><br>
+              <input type="text" id="email" placeholder="Digite o seu e-mail" required/>
+              <small id="textEmail"></small>
+            </div>
+
+            <div class = "box">
+              <label id="labelSenha" for="password">Senha:</label><br>
+              <input type="password" id="senha" placeholder="Digite a sua senha"required/>
+              <small id="textPassword"></small>
+            </div>
+
+            <div class = "box">
+              <label for ="nivel">Sou:</label><br>
+              <select name="acesso" id="acesso" required>
+                  <option valeu="Sócio">Sócio</option>
+                  <option valeu="Membro">Membro</option>
+                  <option valeu="Diretor">Diretor</option>
+                </select>
+
+            </div>
+
+            <button type="submit" id="btnEntrar">Entrar</button>
+
+            <small id="textForm"></small>
+            <a href="cadastro.html"> Ainda não sou cadastrado no Grifo.</a>
+            
+          </form>
+        </div>
+  </body>
+</html>

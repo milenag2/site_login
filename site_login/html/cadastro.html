@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/cadastro.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/css/grifo.css">
+    <title>Cadastro - Grifo</title>  
+  </head>
+  <body>
+    <h1> GRIFO: Cadastro</h1>
+
+        <div class = "mainBox">
+            <div id='msgError'></div>
+            <div id='msgSucess'></div>
+          <form autocomplete="off">
+
+            <div class = "box">
+                <label for="nome" id="labelNome">Nome: </label><br>
+                <input type="text" id="nome" placeholder="Digite o seu nome" required/>
+                <small id="textNome"></small>
+            </div>
+
+              <div class = "box">
+                <label for="Sobrenome" id="labelSobrenome">Sobrenome: </label><br>
+                <input type="text" id="sobrenome" placeholder="Digite o seu sobrenome" required/>
+                <small id="textSobrenome"></small>
+              </div>
+
+              <div class = "box">
+                <label for="email" id="labelEmail">E-mail: </label><br>
+                <input type="text" id="email" placeholder="Digite o seu e-mail" required/>
+                <small id="textEmail"></small>
+              </div>
+
+            <div class = "box">
+              <label for="tel" id="labelTel">Telefone: </label><br>
+              <input type="number" id="tel" placeholder="(xx) xxxx-xxxx" required/>
+              <small id="textTel"></small>
+            </div>
+
+            <div class = "box">
+              <label for="senha" id="labelSenha">Senha:</label><br>
+              <input type="password" id="senha" placeholder="Digite a sua senha" required/>
+              <small id="textPassword"></small>
+            </div>
+
+            <div class = "box">
+              <label for ="nivel">Sou:</label><br>
+              <select name="acesso" id="acesso" required>
+                  <option valeu="Sócio">Sócio</option>
+                  <option valeu="Membro">Membro</option>
+                  <option valeu="Diretor">Diretor</option>
+                </select>
+
+            </div>
+
+            <button type="submit" id="btnCadastrar">Cadastrar</button>
+
+            <small id="textForm"></small>
+            <a href="login.html"> Já sou cadastrado no Grifo.</a>
+            
+          </form>
+        </div>
+  </body>
+</html>

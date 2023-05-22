@@ -1,0 +1,103 @@
+body {
+        display: flex;
+        background-color: #af0404;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(img/grifo1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+        margin-top: 10%; 
+}
+
+.mainBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-left: 430px;
+  background-color: #e0caca80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #97141460;
+  width: 400px;
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #ece9e9;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.box{
+position: center;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #c00202;
+}
+
+.label-float label{
+  color: #f5f0f0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #e5e4eb
+}
+
+button{
+  background-color: transparent;
+  border-color: #020207;  
+  color: #940606;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #000000;
+  color: #fff;
+}
+
+#msgError{
+    text-align: center;
+    center: #ff0000;
+    background-color: #ffbbbb;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+}
+
+#msgSucess{
+    text-align: center;
+    center: #00bb00;
+    background-color: #bbffbe;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+}
